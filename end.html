@@ -1,0 +1,42 @@
+GIT <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Congrats!</title>
+    <link rel="stylesheet" href="./assets/style.css"/>
+  </head>
+  <body>
+    <a class="Scorebtn" href="./highscores.html">View High Scores</a>
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h1 class="all-done">All Done!</h1>
+        <div class="your-final">
+          <h3>Your final score is</h3>
+          <h1 id="finalScore"></h1>
+        </div>
+        <div class="your-initials"></div>
+        <form>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Enter your initials"
+          />
+          <button
+            type="submit"
+            class="btn"
+            id="saveScoreBtn"
+            onclick="saveHighScore(event)"
+            disabled
+          >
+            Submit
+          </button>
+        </form>
+        <a class="btn" href="./game.html">Play Again</a>
+      </div>
+    </div>
+    <script src="./JS/end.js"></script>
+  </body>
+</html>
